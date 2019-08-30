@@ -1,6 +1,6 @@
 (ns cl-java-introspector.client-example)
 
-(require '[clojure.tools.nrepl :as repl])
+(require '[nrepl.core :as repl])
 
 
 (defn remote-execute [hostname port code]

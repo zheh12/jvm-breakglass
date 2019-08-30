@@ -1,16 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>net.matlux</groupId>
+  <groupId>zheh12</groupId>
   <artifactId>jvm-breakglass</artifactId>
   <packaging>jar</packaging>
   <version>0.0.9-SNAPSHOT</version>
   <url>http://www.matlux.net</url>
   <description>Setting up an nrepl can be useful to introspect into the JVM for troubleshouting/investigation or testing of regular Java applications. You can connect onto a process and use a Clojure prompt interactivelly or have client application that sends and execute Java code dynamically. It works because the code injected is Clojure and that the Clojure run-time allows to evaluate code at run-time. Furthermore Clojure interops very easily with Java i.e. you can translate pretty much any Java code into Clojure and access all your Java object from the injected Clojure code. This is the perfect tool to access the inside of your JVM process live after it has been deployed. To run any fancy change of code scenario, any data structure or call any method you don't need to redeploy your java code. You can see what your process sees in real time. This is an unvaluable tool to use to develop and maintain a java application.</description>
-  <organization>
-    <name>Matlux Ltd.</name>
-    <url>http://www.matlux.net</url>
-  </organization>
   <licenses>
     <license>
       <name>Copyright (C) 2014 Mathieu Gauthron. Distributed under the Eclipse Public License.</name>
@@ -20,10 +16,10 @@
     </license>
   </licenses>
   <scm>
-    <connection>https://github.com/matlux/jvm-breakglass.git</connection>
-    <developerConnection>git@github.com:matlux/jvm-breakglass.git</developerConnection>
+    <connection>https://github.com/zheh12/jvm-breakglass.git</connection>
+    <developerConnection>git@github.com:zheh12/jvm-breakglass.git</developerConnection>
     <tag>d2b037c</tag>
-    <url>https://github.com/matlux/jvm-breakglass</url>
+    <url>https://github.com/zheh12/jvm-breakglass</url>
   </scm>
   <build>
     <plugins>
@@ -79,12 +75,12 @@
     <dependency>
       <groupId>org.clojure</groupId>
       <artifactId>clojure</artifactId>
-      <version>1.6.0</version>
+      <version>1.10.1</version>
     </dependency>
     <dependency>
-      <groupId>org.clojure</groupId>
-      <artifactId>tools.nrepl</artifactId>
-      <version>0.2.6</version>
+      <groupId>cider</groupId>
+      <artifactId>cider-nrepl</artifactId>
+      <version>0.22.0-beta6</version>
     </dependency>
     <dependency>
         <groupId>me.raynes</groupId>

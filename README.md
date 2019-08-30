@@ -1,7 +1,13 @@
+# This code fork from matlux/jvm-breakglass
+
+This fork want add some feature to the code
+
+1. use cider-nrepl replace the normal nrepl
+2. add more useful functional.
+
 nRepl hook for Java
 ===================
 
-[![Build Status](https://travis-ci.org/matlux/jvm-breakglass.svg?branch=master)](https://travis-ci.org/matlux/jvm-breakglass)
 [![Clojars Project](http://clojars.org/net.matlux/jvm-breakglass/latest-version.svg)]
 
 Background on nRepl

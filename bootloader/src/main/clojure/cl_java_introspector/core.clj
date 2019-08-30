@@ -6,14 +6,9 @@
 (import '(net.matlux NreplServer))
 (import '(java.lang.reflect Modifier))
 
-
-
-
 (defn get-objs []
     (into [] (.keySet NreplServer/instance))
 )
-
-
 
 (defn get-obj [^String bean-name] 
   (.getObj NreplServer/instance bean-name))
